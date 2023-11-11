@@ -29,12 +29,8 @@ do
   case "${opt}" in
     "--" )
       break 2;;
-    "--dry" ) DRYRUN=1;;
-    "--dryrun" ) DRYRUN=1;;
-    "--test" ) DRYRUN=1;;
     "--debug" ) DEBUG=1 ;;
     "--break" ) BREAKPOINT=1;;
-    "--init" ) DOINIT=1;;
     "--infile="* ) INFILE="${opt#*=}";;
 #    "--config="* ) CONFIGFILE="${opt#*=}";;
     *)
